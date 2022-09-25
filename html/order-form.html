@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tiramisu</title>
+</head>
+
+<body>
+    <form method="GET" enctype="multipart/form-data" accept-charset="UTF-8">
+        <fieldset>
+            <legend>
+                <h2><b>Customize your tiramisu</b></h2>
+            </legend>
+            <table border="1" align="center">
+                <tr>
+                    <th>
+                        <h4>Options</h4>
+                    </th>
+                    <th>
+                        <h4>Order Details</h4>
+                    </th>
+                    <th>
+                        <h4>Date and time of delivery</h4>
+                    </th>
+                    <th>
+                        <h4>Payment Options</h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td align="center">Choose size and quantity</td>
+                    <td align="center">Enter your details</td>
+                    <td align="center">Date and time of delivery</td>
+                    <td align="center">Choose one of the payment options</td>
+                </tr>
+
+                <tr>
+                    <!-- Choose size  -->
+
+                    <td>
+                        <input type="radio" id="Small" name="size" value="Small" />
+                        <label for="Small">Small</label>
+                        <br/><br/>
+                        <input type="radio" id="Medium" name="size" value="Medium" />
+                        <label for="Medium">Medium</label>
+                        <br/><br/>
+                        <input type="radio" id="Large" name="size" value="Large" />
+                        <label for="Large">Large</label>
+                        <br/><br/>
+                        <input type="radio" id="XL" name="size" value="XL" />
+                        <label for="XL">XL</label>
+                        <br/><br/>
+                        <input type="number" name="quantity" id="quantity" placeholder="Quantity" min="1" max="5">
+                    </td>
+
+                    <!-- Order details  -->
+                    <td>
+                        <input type="text" name="first_name" placeholder="First Name" min="3" max="20" required />
+                        <br/><br/>
+                        <input type="text" name="last_name" placeholder="Last Name" min="3" max="20" required />
+                        <br/><br/>
+                        <input type="tel" name="nr_tel" placeholder="Phone number" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" />
+                        <br/><br/>
+                        <input type="email" name="email" placeholder="Email" required />
+                        <br/><br/>
+                        <input type="text" name="address" placeholder="Address" required />
+                    </td>
+
+                    <!-- Date and time -->
+                    <td align="center">
+                        <input type="datetime-local" name="time_of_delivery" required>
+                    </td>
+
+                    <!-- Payment option-->
+                    <td>
+
+                        <label for="payment">Choose payment option</label>
+                        <select name="options" id="payment-select">
+                            <optgroup label="Credit Card">
+                                <option value="online">Online</option>
+                                <option value="at_delivery">POS</option>
+                            </optgroup>
+                            <optgroup label="Cash">
+                                <option value="Cash">Cash</option>
+                            </optgroup>
+                            <optgroup label="Crypto">
+                                <option value="bitcoin">Bitcoin</option>
+                                <option value="etherium">Etherium</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+            <br/><br/>
+
+            <!-- Message table -->
+            <table align="center" border="1">
+                <tr>
+                    <td align="center">
+                        <h4>Message</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="message"></label>
+                        <textarea name="message" id="message" rows="13" cols="103" placeholder="Enter a message"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <br/><br/>
+
+            <table align="center">
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <p><i><strong>Our location</strong></i></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1498259.003574772!2d10.761949044619607!3d42.824548545892036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6055af6100b7%3A0x9cb3e3b0f7144ff7!2sPompi%20Tiramis%C3%B9!5e0!3m2!1sen!2s!4v1664145163073!5m2!1sen!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+
+</html>
