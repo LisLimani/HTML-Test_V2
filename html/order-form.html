@@ -11,9 +11,11 @@
 <body>
     <form method="GET" enctype="multipart/form-data" accept-charset="UTF-8">
         <fieldset>
+
             <legend>
                 <h2><b>Customize your tiramisu</b></h2>
             </legend>
+
             <table border="1" align="center">
                 <tr>
                     <th>
@@ -29,6 +31,7 @@
                         <h4>Payment Options</h4>
                     </th>
                 </tr>
+
                 <tr>
                     <td align="center">Choose size and quantity</td>
                     <td align="center">Enter your details</td>
@@ -37,8 +40,7 @@
                 </tr>
 
                 <tr>
-                    <!-- Choose size  -->
-
+                    <!-- Choose size -->
                     <td>
                         <input type="radio" id="Small" name="size" value="Small" />
                         <label for="Small">Small</label>
@@ -55,7 +57,7 @@
                         <input type="number" name="quantity" id="quantity" placeholder="Quantity" min="1" max="5">
                     </td>
 
-                    <!-- Order details  -->
+                    <!-- Order details -->
                     <td>
                         <input type="text" name="first_name" placeholder="First Name" min="3" max="20" required />
                         <br/><br/>
@@ -75,7 +77,6 @@
 
                     <!-- Payment option-->
                     <td>
-
                         <label for="payment">Choose payment option</label>
                         <select name="options" id="payment-select">
                             <optgroup label="Credit Card">
@@ -92,7 +93,6 @@
                         </select>
                     </td>
                 </tr>
-
             </table>
             <br/><br/>
 
@@ -122,7 +122,7 @@
         </fieldset>
     </form>
 
-    <p><i><strong>Our location</strong></i></p>
+    <p><em><strong>Our location</strong></em></p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1498259.003574772!2d10.761949044619607!3d42.824548545892036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6055af6100b7%3A0x9cb3e3b0f7144ff7!2sPompi%20Tiramis%C3%B9!5e0!3m2!1sen!2s!4v1664145163073!5m2!1sen!2s"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </body>
