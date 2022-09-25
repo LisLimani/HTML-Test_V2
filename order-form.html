@@ -9,8 +9,53 @@
 </head>
 
 <body>
-    <form action="#" method="POST" enctype="multipart/form-data" accept-charset="UTF-8">
+    <form method="GET" enctype="multipart/form-data" accept-charset="UTF-8">
+        <fieldset>
+            <legend>
+                <h2><b>Customize your tiramisu</b></h2>
+            </legend>
+            <table border="1">
+                <tr>
+                    <th>Choose size</th>
+                    <th>Order Details</th>
+                </tr>
 
+                <tr>
+                    <!-- choose size table -->
+                    <td>
+                        <input type="radio" id="Small" name="size" value="Small" />
+                        <label for="Small">Small</label>
+                        <br/><br/>
+                        <input type="radio" id="Medium" name="size" value="Medium" />
+                        <label for="Medium">Medium</label>
+                        <br/><br/>
+                        <input type="radio" id="Large" name="size" value="Large" />
+                        <label for="Large">Large</label>
+                        <br/><br/>
+                        <input type="radio" id="XL" name="size" value="XL" />
+                        <label for="XL">XL</label>
+                    </td>
+
+                    <!-- order details table -->
+                    <td>
+                        <input type="text" name="first_name" placeholder="First Name" min="3" max="20" required />
+                        <br/><br/>
+                        <input type="text" name="last_name" placeholder="Last Name" min="3" max="20" required />
+                        <br/><br/>
+                        <input type="tel" name="nr_tel" placeholder="Phone number" required pattern="\d{9}" />
+                        <br/><br/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Send" />
+                    </td>
+                </tr>
+
+
+            </table>
+        </fieldset>
     </form>
 </body>
 
