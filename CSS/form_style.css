@@ -1,3 +1,8 @@
 textarea {
     resize: none;
 }
+
+#center_tables {
+    display: grid;
+    place-items: center;
+}

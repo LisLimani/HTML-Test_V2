@@ -16,70 +16,70 @@
             <legend>
                 <h2><b>Customize your tiramisu</b></h2>
             </legend>
+            <div id="center_tables">
+                <table border="1">
+                    <tr>
+                        <th>
+                            <h4>Options</h4>
+                        </th>
+                        <th>
+                            <h4>Order Details</h4>
+                        </th>
+                        <th>
+                            <h4>Date and time of delivery</h4>
+                        </th>
+                        <th>
+                            <h4>Payment Options</h4>
+                        </th>
+                    </tr>
 
-            <table border="1" align="center">
-                <tr>
-                    <th>
-                        <h4>Options</h4>
-                    </th>
-                    <th>
-                        <h4>Order Details</h4>
-                    </th>
-                    <th>
-                        <h4>Date and time of delivery</h4>
-                    </th>
-                    <th>
-                        <h4>Payment Options</h4>
-                    </th>
-                </tr>
+                    <tr>
+                        <td>Choose size and quantity</td>
+                        <td>Enter your details</td>
+                        <td>Date and time of delivery</td>
+                        <td>Choose one of the payment options</td>
+                    </tr>
 
-                <tr>
-                    <td align="center">Choose size and quantity</td>
-                    <td align="center">Enter your details</td>
-                    <td align="center">Date and time of delivery</td>
-                    <td align="center">Choose one of the payment options</td>
-                </tr>
+                    <tr>
+                        <!-- Choose size -->
+                        <td>
+                            <input type="radio" id="Small" name="size" value="Small" />
+                            <label for="Small">Small</label>
+                            <br/><br/>
+                            <input type="radio" id="Medium" name="size" value="Medium" />
+                            <label for="Medium">Medium</label>
+                            <br/><br/>
+                            <input type="radio" id="Large" name="size" value="Large" />
+                            <label for="Large">Large</label>
+                            <br/><br/>
+                            <input type="radio" id="XL" name="size" value="XL" />
+                            <label for="XL">XL</label>
+                            <br/><br/>
+                            <input type="number" name="quantity" id="quantity" placeholder="Quantity" min="1" max="5">
+                        </td>
 
-                <tr>
-                    <!-- Choose size -->
-                    <td>
-                        <input type="radio" id="Small" name="size" value="Small" />
-                        <label for="Small">Small</label>
-                        <br/><br/>
-                        <input type="radio" id="Medium" name="size" value="Medium" />
-                        <label for="Medium">Medium</label>
-                        <br/><br/>
-                        <input type="radio" id="Large" name="size" value="Large" />
-                        <label for="Large">Large</label>
-                        <br/><br/>
-                        <input type="radio" id="XL" name="size" value="XL" />
-                        <label for="XL">XL</label>
-                        <br/><br/>
-                        <input type="number" name="quantity" id="quantity" placeholder="Quantity" min="1" max="5">
-                    </td>
+                        <!-- Order details -->
+                        <td>
+                            <input type="text" name="first_name" placeholder="First Name" min="3" max="20" required />
+                            <br/><br/>
+                            <input type="text" name="last_name" placeholder="Last Name" min="3" max="20" required />
+                            <br/><br/>
+                            <input type="tel" name="nr_tel" placeholder="Phone number" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" />
+                            <br/><br/>
+                            <input type="email" name="email" placeholder="Email" required />
+                            <br/><br/>
+                            <input type="text" name="address" placeholder="Address" required />
+                        </td>
 
-                    <!-- Order details -->
-                    <td>
-                        <input type="text" name="first_name" placeholder="First Name" min="3" max="20" required />
-                        <br/><br/>
-                        <input type="text" name="last_name" placeholder="Last Name" min="3" max="20" required />
-                        <br/><br/>
-                        <input type="tel" name="nr_tel" placeholder="Phone number" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" />
-                        <br/><br/>
-                        <input type="email" name="email" placeholder="Email" required />
-                        <br/><br/>
-                        <input type="text" name="address" placeholder="Address" required />
-                    </td>
+                        <!-- Date and time -->
+                        <td>
+                            <input type="datetime-local" name="time_of_delivery" required>
+                        </td>
 
-                    <!-- Date and time -->
-                    <td align="center">
-                        <input type="datetime-local" name="time_of_delivery" required>
-                    </td>
-
-                    <!-- Payment option-->
-                    <td>
-                        <label for="payment">Choose payment option</label>
-                        <select name="options" id="payment-select">
+                        <!-- Payment option-->
+                        <td>
+                            <label for="payment">Choose payment option</label>
+                            <select name="options" id="payment-select">
                             <optgroup label="Credit Card">
                                 <option value="online">Online</option>
                                 <option value="at_delivery">POS</option>
@@ -92,29 +92,30 @@
                                 <option value="etherium">Etherium</option>
                             </optgroup>
                         </select>
-                    </td>
-                </tr>
-            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <br/><br/>
+
+                <!-- Message table -->
+                <table border="1">
+                    <tr>
+                        <td>
+                            <h4>Message</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="message"></label>
+                            <textarea name="message" id="message" rows="13" cols="103" placeholder="Enter a message"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <br/><br/>
 
-            <!-- Message table -->
-            <table align="center" border="1">
-                <tr>
-                    <td align="center">
-                        <h4>Message</h4>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="message"></label>
-                        <textarea name="message" id="message" rows="13" cols="103" placeholder="Enter a message"></textarea>
-                    </td>
-                </tr>
-            </table>
-
-            <br/><br/>
-
-            <table align="center">
+            <table>
                 <tr>
                     <td><input type="submit" value="Submit"></td>
                     <td><input type="reset"></td>
