@@ -1,3 +1,27 @@
+body {
+    font-family: "Arial";
+    font-weight: 600;
+    margin: 0px auto;
+}
+
+legend>h2 {
+    background-color: rgba(255, 123, 0, 0.884);
+    border-radius: 25px;
+    padding: 5px;
+    color: white;
+}
+
+fieldset {
+    border-radius: 5px;
+    border: none;
+    width: 1024px;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin: 0px auto;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+
 textarea {
     resize: none;
 }
@@ -5,4 +29,124 @@ textarea {
 #center_tables {
     display: grid;
     place-items: center;
+}
+
+#radio_buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#quantity {
+    width: 70px;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+#date_time {
+    background-color: rgba(167, 140, 108, 0);
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: arial;
+    color: white;
+}
+
+#payment-select {
+    background-color: rgba(0, 255, 149, 0.452);
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+}
+
+#payment-select optgroup>option {
+    background-color: rgba(15, 207, 207, 0.603);
+    color: black;
+}
+
+optgroup {
+    background-color: rgb(255, 123, 0);
+    color: black;
+}
+
+#tb1 {
+    background-color: rgba(248, 152, 26, 0.822);
+}
+
+.form-table {
+    border: none;
+}
+
+table td,
+th,
+tr {
+    border: 1px solid rgba(153, 153, 153, 0.384);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+#submit {
+    background: #0095eba8;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 15px 45px;
+    text-shadow: none;
+}
+
+#submit:hover {
+    background-color: rgb(41, 201, 89);
+    color: black;
+}
+
+#reset {
+    background: #fcfcfc11;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 15px 45px;
+    text-shadow: none;
+}
+
+#reset:hover {
+    background-color: red;
+    color: white;
+}
+
+#text_input input {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(255, 228, 196, 0);
+    padding: 15px;
+}
+
+.location {
+    display: grid;
+    place-items: center;
+}
+
+#our_location {
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: black;
+    font-size: larger;
+    padding: 15px;
+    width: 600px;
+    text-align: center;
+}
+
+.container {
+    background-image: url("../Tiramisu-Images/tiramisu_backround.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#overlay {
+    background-color: rgba(1, 2, 3, 0.274);
+    z-index: 2;
 }
