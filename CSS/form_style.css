@@ -4,10 +4,28 @@ body {
     margin: 0px auto;
 }
 
+#back_button {
+    background-color: rgba(117, 91, 70, 0.884);
+    border-radius: 10px;
+    color: white;
+    font-family: Arial;
+    display: inline-block;
+    margin: 15px 0px 0px 20px;
+    padding: 15px;
+    text-align: center;
+    width: auto;
+    transition: 1s;
+}
+
+#back_button:hover {
+    background-color: bisque;
+    color: black;
+}
+
 legend>h2 {
-    background-color: rgba(255, 123, 0, 0.884);
-    border-radius: 25px;
-    padding: 5px;
+    background-color: rgba(119, 58, 0, 0.884);
+    border-radius: 15px;
+    padding: 10px;
     color: white;
 }
 
@@ -94,26 +112,30 @@ tr {
 }
 
 #submit {
-    background: #0095eba8;
+    background: #fffff2;
+    font-size: medium;
     border-radius: 15px;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 45px;
     text-shadow: none;
+    transition: 1s;
 }
 
 #submit:hover {
-    background-color: rgb(41, 201, 89);
-    color: black;
+    background-color: #41d3bd;
+    color: rgb(255, 255, 255);
 }
 
 #reset {
     background: #fcfcfc11;
     border-radius: 15px;
     border: none;
+    font-size: medium;
     color: white;
     padding: 15px 45px;
     text-shadow: none;
+    transition: 1s;
 }
 
 #reset:hover {
