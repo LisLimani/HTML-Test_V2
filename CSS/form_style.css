@@ -19,14 +19,33 @@ body {
 
 #back_button:hover {
     background-color: bisque;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 legend>h2 {
-    background-color: rgba(119, 58, 0, 0.884);
+    background-color: rgba(255, 255, 255, 0.884);
+    position: relative;
     border-radius: 15px;
     padding: 10px;
-    color: white;
+    color: rgb(124, 124, 124);
+    animation-timing-function: ease;
+    animation: move_center 1.8s linear 1 reverse;
+    animation-fill-mode: both;
+}
+
+@keyframes move_center {
+    0% {
+        background-color: rgba(119, 58, 0, 0.884);
+        color: rgb(255, 255, 255);
+        left: 0px;
+        right: 0px;
+        transform: rotate(360deg);
+    }
+    100% {
+        left: 150px;
+        right: 0px;
+        transform: rotate(0deg);
+    }
 }
 
 fieldset {
@@ -93,7 +112,7 @@ optgroup {
 }
 
 #tb1 {
-    background-color: rgba(248, 152, 26, 0.822);
+    background-color: rgba(204, 161, 97, 0.788);
 }
 
 .form-table {
