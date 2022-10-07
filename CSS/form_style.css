@@ -13,22 +13,25 @@ legend>h2 {
 
 fieldset {
     border-radius: 5px;
-    border: none;
     width: 1024px;
+    border: none;
     background-color: rgba(0, 0, 0, 0.733);
     margin: 0px auto;
-    display: grid;
-    place-items: center;
     z-index: 1;
+}
+
+fieldset #center_tables {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 textarea {
     resize: none;
-}
-
-#center_tables {
-    display: grid;
-    place-items: center;
 }
 
 #radio_buttons {
@@ -84,6 +87,7 @@ th,
 tr {
     border: 1px solid rgba(153, 153, 153, 0.384);
     padding: 10px;
+    width: auto;
     text-align: center;
     border-radius: 5px;
     color: white;
@@ -125,8 +129,10 @@ tr {
 }
 
 .location {
-    display: grid;
-    place-items: center;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #our_location {
